@@ -6,7 +6,7 @@ let transporter = nodemailer.createTransport({
     secure: true, // true for 465, false for other ports
     service: "Gmail",
     auth: {
-        user: 'm.playm08@gmail.com', // email address user
+        user: 'a.shrestha998@gmail.com', // email address user
         pass: 'm8@Play1234', // email password
     },
 }); // initiating email sender variable
@@ -23,7 +23,7 @@ function mailer(mail_to) {
 
     // send mail with defined transport object
     let confirmMail = transporter.sendMail({
-        from: '"Play M8👻" <m.playm08@gmail.com>', // sender address
+        from: '"Aadarsha Man Shrestha" <m.playm08@gmail.com>', // sender address
         to: mail_to, // list of receivers
         subject: "Registration Successful! ✔", // Subject line
         text: "Hello Organizer", // plain text body
