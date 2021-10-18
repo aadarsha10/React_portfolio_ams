@@ -9,9 +9,9 @@ app.use(express.json());
 app.use(cors());
 // Render static files
 app.use(express.static('public'));
-app.use(express.static(path.join(__dirname, './client/build')))
+app.use(express.static(path.join(__dirname, './portfolio-ams/build')))
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, './client/build/index.html'))
+    res.sendFile(path.join(__dirname, './portfolio-ams/build/index.html'))
 })
 // Port website will run on
 //*************** */
